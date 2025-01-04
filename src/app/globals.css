@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
+body {
+    font-family: var(--font-poppins), sans-serif;
+  }
+  
