@@ -1,0 +1,30 @@
+import Image from "next/image";
+
+
+const Hero = () => {
+    
+  return (
+    <div
+    className="hero min-h-screen"
+    style={{
+      backgroundImage: "url(https://spesialiskomporgas.id/wp-content/uploads/2022/09/background-service-kompor-gas.jpg)",
+    }}>
+    <div className="hero-overlay bg-opacity-60"></div>
+    <div className="hero-content text-neutral-content text-center">
+      <div className="max-w-md">
+        <h1 className="mb-5 text-5xl font-bold">Jasa Service Kompor Gas Tanam & Oven No.1
+        </h1>
+        <p className="mb-5">
+        Jamantek spesialis service kompor gas panggilan terbesar se Jabodetabek.
+        Kami disini sebagai solusi semua masalah yang terjadi pada kompor gas anda.
+        </p>
+        <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md bg-[linear-gradient(110deg,#ff0000,45%,#A6A6A6,55%,#ff0000)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          Hubungi Kami
+        </button>
+      </div>
+    </div>
+  </div>
+  );
+};
+
+export default Hero;
