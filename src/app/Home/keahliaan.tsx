@@ -10,7 +10,7 @@ import { WorldMap } from "@/components/World";
 import Link from "next/link";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 
-const Section3 = () => {
+const Keahliaan = () => {
   return (
     <div className="w-full grid grid-row-2 ">
       <div className=" p-10 md:p-20">
@@ -150,4 +150,4 @@ const Section3 = () => {
   );
 };
 
-export default Section3;
+export default Keahliaan;

@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";  // Import font Poppins
 import "./globals.css";
 import Navbars from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CallatAction from "@/components/callatAction";
 
 // Mendefinisikan font Poppins
 const poppins = Poppins({
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <Navbars />
         {children}
+        <CallatAction />
         <Footer />
       </body>
     </html>

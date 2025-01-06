@@ -1,4 +1,4 @@
-const Section2 = () => {
+const Spesialis = () => {
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row">
@@ -29,4 +29,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default Spesialis;

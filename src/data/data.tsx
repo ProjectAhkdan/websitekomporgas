@@ -1,6 +1,23 @@
 import { JSX } from "react";
 import Image from "next/image";
 
+interface alamat {
+  address: string;
+  phone: number;
+  maplink: string;
+}
+
+interface Testimonial {
+  quote: string;
+  name: string;
+  title: string;
+}
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 interface Alasan {
   titles: string;
   Image: JSX.Element;
@@ -20,6 +37,30 @@ interface cards {
   title: string;
   src: string;
 }
+
+export const alamat: alamat = {
+  address: "Jl. Raya Pasar Minggu No.9B, Pejaten, Jakarta Selatan",
+  phone: 6281214446687,
+  maplink: "https://www.google.com/maps/place/Jl.+Raya+Pasar+Minggu+No.9B,+Pejaten,+Jakarta+Selatan/@-6.1767274,106.8226678,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-6.1767274!4d106.8226678?hl=en",
+}
+
+export const testimonials: Testimonial[] = [
+    {
+      quote: "Saya sangat merekomendasikan JMT untuk service oven dan kompor freestanding restoran besar sekalipun. Profesionalisme sangat terjaga",
+      name: "A. Gustavo",
+      title: "Pemilik Cafe",
+    },
+    {
+      quote: "Jasa service kompor tanam profesional yang banyak diskonnya. Selain murah, hasilnya maksimal, proses cepat dan rapih. Thanks",
+      name: "Hany Purnama",
+      title: "Pebisnis Online",
+    },
+    {
+      quote: "Sudah kesekian kalinya kompor di hotel saya rusak. Diperbaiki masalah utamanya dan ga rusak-rusak lagi. Terima kasih Jamantek",
+      name: "Suwarjono",
+      title: "GM Hotel",
+    },
+];
 
 export const cards: cards[] = [
   {
@@ -187,4 +228,27 @@ export const alasanKomporGasTanam: Alasan[] = [
       />
     ),
   }
+];
+
+export const faqs: FAQItem[] = [
+  {
+    question: "Wilayah Mana Saja Jangkauannya?",
+    answer: "Kami dapat menjangkau wilayah : Jakarta, Bogor, Depok, Tangerang dan Bekasi",
+  },
+  {
+    question: "Kapan Jam Operasionalnya?",
+    answer: "Kami tersedia mulai Pukul 07.00 s/d Pukul 21.00. Kapanpun Anda membutuhkan Kami siap melayani. Segera hubungi Kami di +62 812-1444-6687",
+  },
+  {
+    question: "Apa Saja Yang Dapat Kami Perbaiki?",
+    answer: "Kami dapat mengatasi semua masalah Kompor Tanam, Oven, dan Freestanding semua Merk dalam skala Besar maupun skala Rumahan",
+  },
+  {
+    question: "Berapa Biaya / Harga Jasa Service Kami?",
+    answer: "Biaya atau Harga Jasa Service Kompor Panggilan Kami menyesuaikan kebutuhan Service Anda. Untuk lebih lanjut, konsultasikan dahulu permasalahan Kompor/ Oven/ Freestanding Anda dengan Admin Kami. Jaminan harga termurah.",
+  },
+  {
+    question: "Berapa Lama Waktu Pengerjaannya?",
+    answer: "Waktu pengerjaan disesuaikan dengan seberapa parah kerusakan Kompor/ Oven/ Freestanding Anda. Kami akan memberikan layanan secepat dan semaksimal mungkin.",
+  },
 ];

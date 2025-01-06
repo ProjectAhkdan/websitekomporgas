@@ -1,4 +1,14 @@
-const Hero = () => {
+"use client";
+
+import { useRouter } from "next/navigation";
+
+const HeroHome = () => {
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push("/Contact");
+  };
+
   return (
     <div
       className="hero min-h-screen"
@@ -18,7 +28,10 @@ const Hero = () => {
             Jabodetabek. Kami disini sebagai solusi semua masalah yang terjadi
             pada kompor gas anda.
           </p>
-          <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md bg-[linear-gradient(110deg,#2596be,45%,#ffff,55%,#2596be)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <button
+            onClick={handleNavigation}
+            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md bg-[linear-gradient(110deg,#2596be,45%,#ffff,55%,#2596be)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors "
+          >
             Hubungi Kami
           </button>
         </div>
@@ -27,4 +40,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroHome;

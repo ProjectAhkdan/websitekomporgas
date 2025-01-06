@@ -16,7 +16,7 @@ const menuItems: menuProps[] = [
     },
     {
         label: "Contact",
-        links: "/"
+        links: "/Contact"
     }
 ]
 

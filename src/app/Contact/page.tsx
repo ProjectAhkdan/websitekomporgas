@@ -1,6 +1,12 @@
+import Section2 from "./alamat";
+import HeroContact from "./heroContact";
+
 const Contact = () => {
     return (
-        <div>ini Contact</div>
+        <div>
+            <HeroContact />
+            <Section2 />
+        </div>
     )
 }
 export default Contact;

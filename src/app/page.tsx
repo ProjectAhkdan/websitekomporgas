@@ -1,15 +1,15 @@
-import Hero from "@/app/Home/Hero";
-import Section1 from "./Home/Section2";
-import Section3 from "./Home/Section3";
-import Section4 from "./Home/Section4";
+import Hero from "@/app/Home/heroHome";
+import Spesialis from "./Home/spesialis";
+import Keahliaan from "./Home/keahliaan";
+import Faq from "./Home/faq";
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <Section1 />
-      <Section3 />
-      <Section4 />
+      <Spesialis/>
+      <Keahliaan />
+      <Faq />
     </div>
   );
 }
