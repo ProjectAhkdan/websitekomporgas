@@ -1,6 +1,9 @@
 import { JSX } from "react";
 import Image from "next/image";
 
+export interface RecaptchaProps {
+  onVerified: () => void;
+}
 interface alamat {
   address: string;
   phone: number;
@@ -37,6 +40,7 @@ interface cards {
   title: string;
   src: string;
 }
+
 
 export const alamat: alamat = {
   address: "Jl. Raya Pasar Minggu No.9B, Pejaten, Jakarta Selatan",

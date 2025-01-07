@@ -12,11 +12,11 @@ const menuItems: menuProps[] = [
     },
     {
         label: "About",
-        links: "/About"
+        links: "/page/About"
     },
     {
         label: "Contact",
-        links: "/Contact"
+        links: "/page/Contact"
     }
 ]
 

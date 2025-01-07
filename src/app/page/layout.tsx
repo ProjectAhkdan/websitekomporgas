@@ -1,6 +1,7 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google"; // Import font Poppins
-import "./globals.css";
 
 
 // Mendefinisikan font Poppins
@@ -27,7 +28,10 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased relative`} // Menambahkan variabel font Poppins
       >
+         <Navbar />    
         {children}
+        <Footer />
+
       </body>
     </html>
   );

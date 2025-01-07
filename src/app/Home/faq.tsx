@@ -45,7 +45,11 @@ const Faq = () => {
       </div>
       <div className="pt-10 md:px-20">
         <h2 className="text-2xl font-bold text-blue-600">— Testimonial</h2>
-        <h4 className="text-md">Kepuasan tertinggi kami adalah ketika dapat memberikan dan melihat klien-klien kami mendapatkan hasil terbaik dari jasa service kompor gas tanam & oven Jamantek</h4>
+        <h4 className="text-md">
+          Kepuasan tertinggi kami adalah ketika dapat memberikan dan melihat
+          klien-klien kami mendapatkan hasil terbaik dari jasa service kompor
+          gas tanam & oven Jamantek
+        </h4>
         <div>
           <Testimonials />
         </div>
