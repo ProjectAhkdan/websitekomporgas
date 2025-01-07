@@ -13,8 +13,7 @@ const HeroHome = () => {
     <div
       className="hero min-h-screen"
       style={{
-        backgroundImage:
-          "url(https://spesialiskomporgas.id/wp-content/uploads/2022/09/background-service-kompor-gas.jpg)",
+        backgroundImage: 'url("/assets/background-service-kompor-gas.jpg")',
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>

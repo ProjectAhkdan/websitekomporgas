@@ -4,7 +4,7 @@ const TentangKami = () => {
       <div className="flex flex-col lg:flex-row items-center gap-8 py-8">
         <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="https://spesialiskomporgas.id/wp-content/uploads/2022/09/service-kompor-oven.png"
+            src="/logo-fav.png"
             alt="Technician"
             className="max-w-full h-auto"
           />

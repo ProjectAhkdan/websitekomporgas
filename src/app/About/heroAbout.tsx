@@ -6,7 +6,7 @@ const HeroAbout = () => {
             <Banner 
             title="About Jamantek"
             description="Jamantek: Jaya Mandiri Teknik"
-            backgroundImage="https://spesialiskomporgas.id/wp-content/uploads/2022/09/ariston-background.jpg"
+            backgroundImage="/assets/worktimabout.jpg"
             overlayOpacity="bg-black/70"
             />
         </div>

@@ -3,7 +3,7 @@ const Spesialis = () => {
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row">
         <img
-          src="https://spesialiskomporgas.id/wp-content/uploads/2022/09/service-kompor-gas-e1663678329663.jpeg"
+          src="/assets/service-kompor.jpeg"
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div>

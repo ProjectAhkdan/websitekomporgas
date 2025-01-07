@@ -88,13 +88,13 @@ const Keahliaan = () => {
           </h4>
         </div>
         <div className=" w-full flex justify-center pt-10">
-          <div className=" grid grid-cols-4 gap-10">
+          <div className=" grid grid-cols-2 md:grid-cols-4 gap-10">
             {alasanKomporGasTanam.map((item, index) => (
               <div
                 key={index}
                 className=" items-center justify-center flex flex-col"
               >
-                <div className="w-full ">
+                <div className="w-full justify-center">
                   {item.Image}
                   <h4 className="text-md">{item.titles}</h4>
                 </div>
@@ -106,7 +106,7 @@ const Keahliaan = () => {
         <div className="hero pt-16">
           <div className="hero-content flex-col lg:flex-row">
             <img
-              src="https://spesialiskomporgas.id/wp-content/uploads/2022/09/service-kompor-gas-panggilan.jpg"
+              src="/logo-fav.png"
               className="h-full rounded-lg shadow-2xl"
             />
             <div>

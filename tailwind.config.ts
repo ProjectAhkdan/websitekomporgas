@@ -17,7 +17,7 @@ export default {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         shimmer: "shimmer 2s linear infinite",
-        shimmernav: "shimmer 3s linear infinite",
+        shimmernav: "shimmer 10s linear infinite",
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",

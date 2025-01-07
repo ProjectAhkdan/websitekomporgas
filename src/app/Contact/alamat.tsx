@@ -1,4 +1,4 @@
-import { alamat } from "../../../data/data";
+import { alamat } from "../../data/data";
 
 const Alamat = () => {
   return (
