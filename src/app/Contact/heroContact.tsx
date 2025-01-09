@@ -7,7 +7,7 @@ const HeroContact = () => {
             title="Detail Kontak"
             description=""
             backgroundImage="/assets/maps.jpg"
-            overlayOpacity="bg-black/70"
+            overlayOpacity="bg-black/60"
             />
         </div>
     )
