@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 const TentangKami = () => {
   return (
     <div className="px-4 lg:px-16">
       <div className="flex flex-col lg:flex-row items-center gap-8 py-8">
         <div className="w-full lg:w-1/2 flex justify-center">
-          <img
+          <Image
             src="/logo-fav.png"
             alt="Technician"
             className="max-w-full h-auto"

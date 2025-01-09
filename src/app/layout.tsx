@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CallatAction from "@/components/callatAction";
+import WhatsAppChat from "@/components/whatsapp";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"], 
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <WhatsAppChat />
         <CallatAction />
         <Footer />
       </body>

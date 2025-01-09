@@ -4,7 +4,6 @@ import { useState } from "react";
 import { FocusCards } from "@/components/ui/cardGallery";
 import { cards } from "../../data/data";
 import Accordion from "@/components/accordion";
-import { testimonials } from "../../data/data";
 import Testimonials from "@/components/testimoni";
 
 const Faq = () => {

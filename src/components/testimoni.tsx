@@ -9,7 +9,7 @@ const Testimonials = () => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-md text-center"
             >
-              <p className="italic text-gray-600 mb-4">"{testimonial.quote}"</p>
+              <p className="italic text-gray-600 mb-4">&quot;{testimonial.quote}&quot;</p>
               <h3 className="text-blue-500 font-semibold">{testimonial.name}</h3>
               <p className="text-gray-500 text-sm">{testimonial.title}</p>
             </div>

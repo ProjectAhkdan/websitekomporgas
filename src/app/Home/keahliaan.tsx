@@ -9,6 +9,7 @@ import {
 import { WorldMap } from "@/components/World";
 import Link from "next/link";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
+import Image from "next/image";
 
 const Keahliaan = () => {
   return (
@@ -105,9 +106,12 @@ const Keahliaan = () => {
 
         <div className="hero pt-16">
           <div className="hero-content flex-col lg:flex-row">
-            <img
+            <Image
+             alt="logo"
               src="/logo-fav.png"
               className="h-full rounded-lg shadow-2xl"
+              width={100}
+              height={100}
             />
             <div>
               <h2 className="text-md">

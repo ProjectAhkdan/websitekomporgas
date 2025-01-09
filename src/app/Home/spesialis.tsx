@@ -1,10 +1,15 @@
+import Image from "next/image";
+
 const Spesialis = () => {
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row">
-        <img
+        <Image
+          alt="servis-kompor"
           src="/assets/service-kompor.jpeg"
           className="max-w-sm rounded-lg shadow-2xl"
+          width={300}
+          height={300}
         />
         <div>
           <h1 className="text-5xl font-bold">
@@ -21,9 +26,7 @@ const Spesialis = () => {
             berpengalaman tinggi dalam perbaikan kompor gas tanam, freestanding
             dan oven semua merek.
           </p>
-          
         </div>
-        
       </div>
     </div>
   );

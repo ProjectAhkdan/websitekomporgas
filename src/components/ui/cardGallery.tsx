@@ -3,6 +3,11 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/cn";
 
+type Card = {
+  title: string;
+  src: string;
+};
+
 export const Card = React.memo(
   ({
     card,
@@ -10,7 +15,7 @@ export const Card = React.memo(
     hovered,
     setHovered,
   }: {
-    card: any;
+    card: Card;  // Menggunakan tipe Card yang sudah didefinisikan
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -45,16 +50,11 @@ export const Card = React.memo(
 
 Card.displayName = "Card";
 
-type Card = {
-  title: string;
-  src: string;
-};
-
 export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-3 md:grid-cols-3 gap-2  max-w-5xl mx-auto md:px-8 w-full">
+    <div className="grid grid-cols-3 md:grid-cols-3 gap-2 max-w-5xl mx-auto md:px-8 w-full">
       {cards.map((card, index) => (
         <Card
           key={card.title}

@@ -1,5 +1,3 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import Hero from "./Home/heroHome";
 import Keahliaan from "./Home/keahliaan";
 import Spesialis from "./Home/spesialis";
