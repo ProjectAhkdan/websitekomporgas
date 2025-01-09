@@ -8,6 +8,8 @@ const TentangKami = () => {
           <Image
             src="/logo-fav.png"
             alt="Technician"
+            width={200}
+            height={200}
             className="max-w-full h-auto"
           />
         </div>

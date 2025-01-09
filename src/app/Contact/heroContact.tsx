@@ -6,7 +6,7 @@ const HeroContact = () => {
             <Banner 
             title="Detail Kontak"
             description=""
-            backgroundImage="https://spesialiskomporgas.id/wp-content/uploads/2022/09/ariston-background.jpg"
+            backgroundImage="/assets/maps.jpg"
             overlayOpacity="bg-black/70"
             />
         </div>
