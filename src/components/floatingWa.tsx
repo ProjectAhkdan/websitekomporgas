@@ -2,11 +2,10 @@
 
 import React from 'react';
 import { IconBrandWhatsapp } from '@tabler/icons-react';
+import { whatsappConfig } from '@/data/data';
 
 const WhatsAppChat: React.FC = () => {
-  const phoneNumber = '6281234567890'; // Ganti dengan nomor WhatsApp yang ingin dihubungi
-  const message = 'Halo, saya membutuhkan bantuan!'; // Pesan default yang ingin ditambahkan
-
+  const {phoneNumber, message} = whatsappConfig;
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

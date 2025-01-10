@@ -10,8 +10,12 @@ import { WorldMap } from "@/components/World";
 import Link from "next/link";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 import Image from "next/image";
+import { whatsappConfig } from "../../data/data";
 
 const Keahliaan = () => {
+    const {phoneNumber, message} = whatsappConfig;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   return (
     <div className="w-full grid grid-row-2 ">
       <div className=" p-10 md:p-20">
@@ -36,9 +40,9 @@ const Keahliaan = () => {
                 <div className="card-body">
                   <h2 className="card-title">{card.title}</h2>
                   <p className="card-text">{card.description}</p>
-                  <a href={card.link} className="btn btn-primary">
+                  <Link href={card.link} className="btn btn-primary">
                     Lihat Detail
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -107,7 +111,7 @@ const Keahliaan = () => {
         <div className="hero pt-16">
           <div className="hero-content flex-col lg:flex-row">
             <Image
-             alt="logo"
+              alt="logo"
               src="/logo-fav.png"
               className="h-full rounded-lg shadow-2xl"
               width={100}
@@ -134,17 +138,15 @@ const Keahliaan = () => {
                 </ul>
               </div>
               <div className=" pt-10">
-                <button className="btn btn-primary hover:cursor-pointer">
-                  <Link
-                    className="flex items-center gap-2"
-                    href="https://api.whatsapp.com/send?phone=6281214446687&text=Halo%20Jaya%20Mandiri%20Teknik%2C%20saya%20mau%20service&l=id"
-                  >
-                    <span>
+                <Link
+                  className="flex items-center gap-2 btn btn-primary w-fit"
+                  href={url}
+                >
+                   <span>
                       <IconBrandWhatsapp />
                     </span>
                     Free Konsultasi Via Whatsapp
-                  </Link>
-                </button>
+                </Link>
               </div>
             </div>
           </div>

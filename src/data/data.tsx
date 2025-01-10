@@ -46,6 +46,17 @@ interface cards {
   src: string;
 }
 
+interface whatsappConfig {
+  phoneNumber: string;
+  message: string;
+}
+
+export const whatsappConfig: whatsappConfig = {
+  phoneNumber: '6281214446687',
+  message: 'Halo jaya mandiri teknik, saya mau service',
+};
+
+
 export const alamat: alamat = {
   address: "Jl. Raya Pasar Minggu No.9B, Pejaten, Jakarta Selatan",
   phone: 6281214446687,
@@ -119,19 +130,19 @@ export const cardItems: CardProps[] = [
     title: "Service Kompor Tanam",
     description:
       "Kami menerima perbaikan kompor gas tanam berbagai merk, tipe dan berbagai kerusakan",
-    link: "https://wa.me/6281214446687?text=ada+yang+bisa+saya+bantu+?",
+    link: `https://wa.me/${whatsappConfig.phoneNumber}?text=${encodeURIComponent(whatsappConfig.message)}`,
   },
   {
     title: "Service Freestanding",
     description:
       "Kami juga memperbaiki kompor oven gas (freestanding) berbagai merk dan kerusakannya",
-    link: "https://wa.me/6281214446687?text=ada+yang+bisa+saya+bantu+?",
+    link: `https://wa.me/${whatsappConfig.phoneNumber}?text=${encodeURIComponent(whatsappConfig.message)}`,
   },
   {
     title: "Service Water Heater",
     description:
       "Kami menerima berbagai merk dan kerusakan water heater. Hubungi kami sekarang",
-    link: "https://wa.me/6281214446687?text=ada+yang+bisa+saya+bantu+?",
+    link: `https://wa.me/${whatsappConfig.phoneNumber}?text=${encodeURIComponent(whatsappConfig.message)}`,
   },
 ];
 

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google"; 
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import CallatAction from "@/components/callatAction";
-import WhatsAppChat from "@/components/whatsapp";
+import WhatsAppChat from "@/components/floatingWa";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"], 
