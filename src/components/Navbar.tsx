@@ -26,7 +26,7 @@ const menuItems: MenuProps[] = [
   },
 ];
 
-const Navbar = () => {
+const navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-white bg-[length:200%_100%] z-[99999] fixed">
+    <div className="navbar bg-white bg-[length:200%_100%] z-[99999] fixed shadow-sm shadow-black/40">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">
           <Image src={Logo} width={100} height={100} alt="logo" />
@@ -85,4 +85,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default navbar;
