@@ -1,19 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { FocusCards } from "@/components/ui/cardGallery";
-import { cards } from "../../data/data";
 import Accordion from "@/components/accordion";
 import Testimonials from "@/components/testimoni";
 
 const Faq = () => {
-  const [showAll, setShowAll] = useState(false);
-
-  const cardsToShow = showAll ? cards : cards.slice(0, 3);
-
-  const handleToggle = () => {
-    setShowAll((prevState) => !prevState);
-  };
 
   return (
     <div className="w-full p-10 grid grid-row-2 ">
