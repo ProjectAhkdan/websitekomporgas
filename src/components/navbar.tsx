@@ -57,7 +57,7 @@ const Navbar = () => {
         animate={{ x: isMenuOpen ? 0 : "-100%" }} // Move to 0 when menu is open, otherwise back to -100%
         exit={{ x: "-100%" }} // Exit animation
         transition={{ type: "spring", stiffness: 300, damping: 30 }} // Smooth transition
-        className="lg:hidden fixed top-0 left-0 w-2/3 bg-white h-full shadow-lg"
+        className="lg:hidden fixed flex justfy-center w-2/3 bg-white h-full shadow-lg"
       >
 
         <ul className="menu p-4 font-bold text-md w-full">
