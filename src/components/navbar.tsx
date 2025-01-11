@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="Navbar bg-white bg-[length:200%_100%] z-[99999] w-full fixed shadow-sm shadow-black/40">
+    <div className="Navbar bg-white bg-[length:200%_100%] z-[99999] flex w-full fixed shadow-sm shadow-black/40">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">
           <Image src={Logo} width={100} height={100} alt="logo" />
