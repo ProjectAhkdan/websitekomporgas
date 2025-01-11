@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="Navbar bg-white bg-[length:200%_100%] items-center z-[99999] flex w-full fixed shadow-sm shadow-black/40">
+    <div className="Navbar bg-white bg-[length:200%_100%] pr-10 items-center z-[99999] flex w-full fixed shadow-sm shadow-black/40">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">
           <Image src={Logo} width={100} height={100} alt="logo" />
@@ -57,7 +57,7 @@ const Navbar = () => {
         animate={{ x: isMenuOpen ? 0 : "-100%" }} // Move to 0 when menu is open, otherwise back to -100%
         exit={{ x: "-100%" }} // Exit animation
         transition={{ type: "spring", stiffness: 300, damping: 30 }} // Smooth transition
-        className="lg:hidden fixed flex justify-center w-2/3 bg-white pr-10 h-full shadow-lg"
+        className="lg:hidden fixed flex justify-center w-2/3 bg-white h-full shadow-lg"
       >
 
         <ul className="menu p-4 font-bold text-md w-full">
