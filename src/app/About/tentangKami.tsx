@@ -58,15 +58,6 @@ const TentangKami = () => {
       {/* Section: Merk dan Lokasi */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-20">
         <div>
-          <h2 className="text-xl font-bold text-blue-600 mb-2">Merk</h2>
-          <p className="text-gray-700">
-            Teka, Delizia, Ariston, Tecnogas, Diamante, La Germania, Modena,
-            Domo, Elba, Zerowatt, Italina, Electrolux, Azalea, Ram Armalia,
-            Bompani, Bosch, Brandt, Covina, Frigidaire, Indesit, Itagas,
-            Kelvinator, Linea, Philips, Smeg, Siemens, Zanussi.
-          </p>
-        </div>
-        <div>
           <h2 className="text-xl font-bold text-blue-600 mb-2">Cakupan Lokasi</h2>
           <p className="text-gray-700">
             Kota Tangerang, Kabupaten Tangerang, Kota Tangerang Selatan, Jakarta
