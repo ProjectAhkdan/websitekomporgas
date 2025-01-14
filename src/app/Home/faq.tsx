@@ -5,7 +5,7 @@ const Faq = () => {
   return (
     <div className="w-full p-10 space-y-16">
       {/* FAQ Section */}
-      <section className="p-10 md:p-20 bg-base-100">
+      <section className=" md:p-20 bg-base-100">
         <h2 className="text-2xl font-bold text-blue-600">— FAQ</h2>
         <h3 className="text-lg font-medium">Seputar Jasa Service Kami</h3>
         <h4 className="text-md mt-2">Pertanyaan yang sering ditanyakan:</h4>

@@ -24,8 +24,8 @@ const Keahliaan = () => {
       {/* Section: Layanan Kami */}
       <section className="p-10 md:p-20">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-blue-600">~ Layanan Kami ~</h1>
-          <p className="text-lg font-semibold">
+          <h1 className="text-2xl md:text-4xl font-bold text-blue-600">~ Layanan Kami ~</h1>
+          <p className="text-xl font-semibold">
             Jasa Service Kompor Gas Panggilan Berbagai Merk
           </p>
         </div>
