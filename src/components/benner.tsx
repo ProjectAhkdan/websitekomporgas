@@ -1,29 +1,40 @@
-import React from "react";
-
 interface BannerProps {
   title: string;
   description: string;
   backgroundImage: string;
+  overlayOpacity?: string; // Default is optional
+  textAlignment?: string;
   textColor?: string;
-  overlayOpacity?: string;
+  height?: string;
 }
 
 const Banner: React.FC<BannerProps> = ({
   title,
   description,
   backgroundImage,
-  textColor = "text-white",
   overlayOpacity = "bg-black/50",
+  textAlignment = "text-center",
+  textColor = "text-white",
+  height = "h-[60vh]",
 }) => {
   return (
     <div
-      className="relative h-64 flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className={`relative ${height} flex items-center justify-center`}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className={`absolute inset-0 ${overlayOpacity}`} aria-hidden="true"></div>
-      <div className="text-center">
-      <h1 className={`relative text-3xl font-bold ${textColor}`}>{title}</h1>
-      <h2 className={`relative text-2xl font-bold ${textColor}`}>{description}</h2>
+      {/* Overlay */}
+      <div className={`absolute inset-0 ${overlayOpacity}`}></div>
+
+      {/* Content */}
+      <div
+        className={`relative z-10 ${textAlignment} ${textColor} px-4 max-w-4xl`}
+      >
+        <h1 className="text-3xl md:text-4xl font-bold">{title}</h1>
+        <p className="mt-2 text-base md:text-lg">{description}</p>
       </div>
     </div>
   );

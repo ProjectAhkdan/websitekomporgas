@@ -1,21 +1,27 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import { useCallback } from "react";
 
 const HeroHome = () => {
   const router = useRouter();
 
-  const handleNavigation = () => {
+  const handleNavigation = useCallback(() => {
     router.push("/Contact");
-  };
+  }, [router]);
 
   return (
-    <div
-      className="hero"
-      style={{
-        backgroundImage: 'url("/assets/background-service-kompor-gas.jpg")',
-      }}
-    >
+    <div className="hero relative">
+      <Image
+        src="/assets/background-service-kompor-gas.jpg"
+        alt="Background Service Kompor Gas"
+        layout="fill"
+        objectFit="cover"
+        quality={75} 
+        priority 
+        className="z-[-1]"
+      />
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content py-20 text-neutral-content text-center">
         <div className="max-w-md">
@@ -29,7 +35,7 @@ const HeroHome = () => {
           </p>
           <button
             onClick={handleNavigation}
-            className="inline-flex h-12 items-center justify-center rounded-md bg-[linear-gradient(110deg,#2596be,45%,#ffff,55%,#2596be)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors "
+            className="inline-flex h-12 items-center justify-center rounded-md bg-blue-600 px-6 font-medium text-white transition-all duration-300 hover:from-[#ffff] hover:to-[#2596be]"
           >
             Hubungi Kami
           </button>

@@ -3,14 +3,15 @@ import Image from "next/image";
 const TentangKami = () => {
   return (
     <div className="px-4 lg:px-16">
+      {/* Section: Deskripsi */}
       <div className="flex flex-col lg:flex-row items-center gap-8 py-8">
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/logo-fav.png"
+            src="/assets/perbaikan4.jpg"
             alt="Technician"
-            width={200}
-            height={200}
-            className="max-w-full h-auto"
+            width={500}
+            height={500}
+            className="max-w-full h-auto rounded-xl"
           />
         </div>
         <div className="w-full lg:w-1/2">
@@ -19,53 +20,60 @@ const TentangKami = () => {
           </h2>
           <p className="text-gray-700 leading-relaxed">
             Jaya Mandiri Teknik (JAMANTEK) merupakan perusahaan Service Kompor
-            Gas Panggilan yang telah beroperasi sejak 2010. Kami hadir di
-            tengah-tengah masyarakat dengan tujuan mempermudah masyarakat dalam
-            mencari tempat service kompor gas. Kami menyadari tidak semua lokasi
-            memiliki service center suatu merk kompor gas, maupun bengkel
-            service kompor gas. Era modernisasi digital dan Sulitnya menemukan
-            tempat service kompor gas inilah yang menjadi dasar usaha ini
-            dibangun. Oleh karena itu, masyarakat harus mengetahui bahwa kami
-            dapat membantu mereka tanpa harus kemana-mana, cukup dirumah saja
-            dan kapan saja hanya dengan menggunakan HP.
+            Gas Panggilan yang telah beroperasi sejak 2010. Kami hadir untuk
+            mempermudah masyarakat dalam mencari layanan service kompor gas,
+            memberikan kemudahan tanpa harus keluar rumah, cukup dengan
+            smartphone.
           </p>
         </div>
       </div>
 
+      {/* Section: Visi dan Misi */}
       <div className="py-8 text-center">
         <h2 className="text-2xl font-bold text-blue-600 mb-4">Visi Misi Kami</h2>
         <div className="text-left max-w-4xl mx-auto">
           <h3 className="text-xl font-semibold mb-2">Visi</h3>
           <p className="mb-4">
-            Menjaga keamanan dapur masyarakat dari potensi kebakaran yang
-            disebabkan oleh rusaknya kompor gas / oven
+            Menjaga keamanan dapur masyarakat dari potensi kebakaran akibat
+            kerusakan kompor gas atau oven.
           </p>
           <h3 className="text-xl font-semibold mb-2">Misi</h3>
           <ul className="list-disc list-inside space-y-2">
             <li>
-              Meningkatkan kualitas reparasi dan semua masalah kerusakan kompor
-              gas / oven sedetail mungkin sampai ke akar permasalahan
+              Menyelesaikan kerusakan kompor gas atau oven secara mendetail dan
+              efektif.
             </li>
             <li>
-              Memperluas jangkauan layanan guna mempermudah masyarakat dalam
-              menemukan tempat memperbaiki kompor gas / oven mereka
+              Memperluas jangkauan layanan untuk memudahkan masyarakat dalam
+              mencari solusi perbaikan.
             </li>
             <li>
-              Memberikan harga terjangkau dan tidak memberatkan masyarakat agar
-              masyarakat tidak menunda-nunda perbaikan kompor gas / oven mereka
+              Memberikan layanan dengan harga terjangkau tanpa membebani
+              masyarakat.
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 py-20">
-        <div className="text-start text2xl font-bold">
-            <h2 className=" font-bold text-blue-600">Merk</h2>
-            <p className=" font-medium ">Teka, Delizia, Ariston, Tecnogas, Diamante, La Germania, Modena, Domo, Elba, Zerowatt, Italina, Electrolux, Azalea, Ram Armalia, Bompani, Bosch, Brandt, Covina, Frigidaire, Indesit, Itagas, Kelvinator, Linea, Philips, Smeg, Siemens, Zanussi</p>
+      {/* Section: Merk dan Lokasi */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-20">
+        <div>
+          <h2 className="text-xl font-bold text-blue-600 mb-2">Merk</h2>
+          <p className="text-gray-700">
+            Teka, Delizia, Ariston, Tecnogas, Diamante, La Germania, Modena,
+            Domo, Elba, Zerowatt, Italina, Electrolux, Azalea, Ram Armalia,
+            Bompani, Bosch, Brandt, Covina, Frigidaire, Indesit, Itagas,
+            Kelvinator, Linea, Philips, Smeg, Siemens, Zanussi.
+          </p>
         </div>
-        <div className="text-end text2xl font-bold">
-            <h2 className=" font-bold text-blue-600">Cakupan Lokasi :</h2>
-            <p className=" font-medium ">Kota Tangerang, Kabupaten Tangerang, Kota Tangerang Selatan, Jakarta Barat, Jakarta Pusat, Jakarta Selatan, Jakarta Utara, Jakarta Timur, Kota Bekasi, Kabupaten Bekasi, Kabupaten Bogor, Kota Bogor, Kota Depok</p>
+        <div>
+          <h2 className="text-xl font-bold text-blue-600 mb-2">Cakupan Lokasi</h2>
+          <p className="text-gray-700">
+            Kota Tangerang, Kabupaten Tangerang, Kota Tangerang Selatan, Jakarta
+            Barat, Jakarta Pusat, Jakarta Selatan, Jakarta Utara, Jakarta Timur,
+            Kota Bekasi, Kabupaten Bekasi, Kabupaten Bogor, Kota Bogor, Kota
+            Depok.
+          </p>
         </div>
       </div>
     </div>

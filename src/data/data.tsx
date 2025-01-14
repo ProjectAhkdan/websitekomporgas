@@ -1,4 +1,3 @@
-import { JSX } from "react";
 import {
   IconShieldCheck,
   IconTools,
@@ -6,65 +5,26 @@ import {
   IconClock,
 } from "@tabler/icons-react";
 
-export interface RecaptchaProps {
-  onVerified: () => void;
-}
-interface alamat {
-  address: string;
-  phone: number;
-  maplink: string;
-}
+// Utility untuk membuat URL WhatsApp
+export const createWhatsAppLink = (phoneNumber: string, message: string): string =>
+  `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-interface Testimonial {
-  quote: string;
-  name: string;
-  title: string;
-}
-
-interface FAQItem {
-  question: string;
-  answer: string;
-}
-
-interface Alasan {
-  titles: string;
-  Image: JSX.Element;
-}
-
-interface CardProps {
-  title: string;
-  description: string;
-  link: string;
-}
-
-interface MasalahKompor {
-  isi: string;
-}
-
-interface cards {
-  title: string;
-  src: string;
-}
-
-interface whatsappConfig {
-  phoneNumber: string;
-  message: string;
-}
-
-export const whatsappConfig: whatsappConfig = {
-  phoneNumber: '6281214446687',
-  message: 'Halo jaya mandiri teknik, saya mau service',
+// Konfigurasi WhatsApp
+export const whatsappConfig = {
+  phoneNumber: "6281214446687",
+  message: "Halo jaya mandiri teknik, saya mau service",
 };
 
-
-export const alamat: alamat = {
+// Alamat
+export const alamat = {
   address: "Jl. Raya Pasar Minggu No.9B, Pejaten, Jakarta Selatan",
-  phone: 6281214446687,
+  phone: "6281214446687",
   maplink:
-    "https://www.google.com/maps/place/Jl.+Raya+Pasar+Minggu+No.9B,+Pejaten,+Jakarta+Selatan/@-6.1767274,106.8226678,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-6.1767274!4d106.8226678?hl=en",
+    "https://www.google.com/maps/place/Jl.+Raya+Pasar+Minggu+No.9B,+Pejaten,+Jakarta+Selatan/@-6.1767274,106.8226678,17z/data=!3m1!4b1",
 };
 
-export const testimonials: Testimonial[] = [
+// Testimoni
+export const testimonials = [
   {
     quote:
       "Saya sangat merekomendasikan JMT untuk service oven dan kompor freestanding restoran besar sekalipun. Profesionalisme sangat terjaga",
@@ -85,26 +45,16 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-export const cards: cards[] = [
-  {
-    title: "Perbaikan1",
-    src: "/assets/perbaikan1.jpg",
-  },
-  {
-    title: "Perbaikan2",
-    src: "/assets/perbaikan2.jpg",
-  },
-  {
-    title: "Perbaikan3",
-    src: "/assets/perbaikan3.jpg",
-  },
-  {
-    title: "Perbaikan4",
-    src: "/assets/perbaikan5.jpg",
-  },
+// Kartu Galeri
+export const cards = [
+  { title: "Perbaikan1", src: "/assets/perbaikan1.jpg" },
+  { title: "Perbaikan2", src: "/assets/perbaikan2.jpg" },
+  { title: "Perbaikan3", src: "/assets/perbaikan3.jpg" },
+  { title: "Perbaikan4", src: "/assets/perbaikan5.jpg" },
 ];
 
-export const masalahUmum: MasalahKompor[] = [
+// Masalah Umum
+export const masalahUmum = [
   { isi: "Kebocoran pada pipa/selang gas" },
   { isi: "Kompor gas meletup saat dinyalakan" },
   { isi: "Gas tidak naik ke kompor" },
@@ -117,7 +67,8 @@ export const masalahUmum: MasalahKompor[] = [
   { isi: "Panel kontrol kompor gas rusak" },
 ];
 
-export const komporGasTanamMasalah: MasalahKompor[] = [
+// Masalah Kompor Tanam
+export const komporGasTanamMasalah = [
   { isi: "Api tidak menyebar rata" },
   { isi: "Api keluar tidak sempurna" },
   { isi: "Tercium bau gas mencurigakan" },
@@ -125,28 +76,30 @@ export const komporGasTanamMasalah: MasalahKompor[] = [
   { isi: "Kompor gas tanam tidak menyala" },
 ];
 
-export const cardItems: CardProps[] = [
+// Layanan
+export const cardItems = [
   {
     title: "Service Kompor Tanam",
     description:
       "Kami menerima perbaikan kompor gas tanam berbagai merk, tipe dan berbagai kerusakan",
-    link: `https://wa.me/${whatsappConfig.phoneNumber}?text=${encodeURIComponent(whatsappConfig.message)}`,
+    link: createWhatsAppLink(whatsappConfig.phoneNumber, whatsappConfig.message),
   },
   {
     title: "Service Freestanding",
     description:
       "Kami juga memperbaiki kompor oven gas (freestanding) berbagai merk dan kerusakannya",
-    link: `https://wa.me/${whatsappConfig.phoneNumber}?text=${encodeURIComponent(whatsappConfig.message)}`,
+    link: createWhatsAppLink(whatsappConfig.phoneNumber, whatsappConfig.message),
   },
   {
     title: "Service Water Heater",
     description:
       "Kami menerima berbagai merk dan kerusakan water heater. Hubungi kami sekarang",
-    link: `https://wa.me/${whatsappConfig.phoneNumber}?text=${encodeURIComponent(whatsappConfig.message)}`,
+    link: createWhatsAppLink(whatsappConfig.phoneNumber, whatsappConfig.message),
   },
 ];
 
-export const alasanKomporGasTanam: Alasan[] = [
+// Alasan Memilih
+export const alasanKomporGasTanam = [
   {
     titles: "Bergaransi",
     Image: <IconShieldCheck size={50} stroke={1.5} color="#2596be" />,
@@ -165,7 +118,8 @@ export const alasanKomporGasTanam: Alasan[] = [
   },
 ];
 
-export const faqs: FAQItem[] = [
+// FAQ
+export const faqs = [
   {
     question: "Wilayah Mana Saja Jangkauannya?",
     answer:
