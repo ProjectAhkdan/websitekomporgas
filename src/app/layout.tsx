@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import CallatAction from "@/components/callatAction";
 import WhatsAppChat from "@/components/floatingWa";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -39,6 +40,7 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.variable} antialiased relative`}>
         <SpeedInsights />
+        <Analytics />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5T3SQC77"
