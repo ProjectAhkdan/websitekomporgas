@@ -1,6 +1,6 @@
 # Website Kompor Gas - Jamantek
 
-<p align="center"> <img src="public/media/logo-jamantek.png" alt="Logo Jamantek" width="200"> </p>
+<p align="center"> <img src="/media/logo-jamantek.png" alt="Logo Jamantek" width="200"> </p>
 
 ## 📂 Struktur Folder
 Berikut adalah struktur folder dalam proyek ini:
