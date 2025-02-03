@@ -1,6 +1,6 @@
 # Website Kompor Gas - Jamantek
 
-![Jamantek Logo](https://your-logo-url.com)  
+![Jamantek Logo](	https://spesialiskomporgas.id/_next/image?url=%2F_…c%2Fmedia%2Flogo-jamantek.625f0025.png&w=128&q=75)  
 **Website resmi untuk layanan jasa service kompor gas - Jamantek**
 
 ## 📂 Struktur Folder
