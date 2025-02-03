@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Website Kompor Gas - Jamantek
 
-## Getting Started
+![Jamantek Logo](https://your-logo-url.com)  
+**Website resmi untuk layanan jasa service kompor gas - Jamantek**
 
-First, run the development server:
+## 📂 Struktur Folder
+Berikut adalah struktur folder dalam proyek ini:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+websitekomporgas/
+├── public/           # Folder untuk aset publik (logo, gambar, favicon, dll.)
+├── src/              # Folder utama untuk kode sumber
+│   ├── components/   # Komponen UI yang dapat digunakan kembali
+│   ├── styles/       # File CSS/Tailwind untuk styling
+│   ├── lib/          # Konfigurasi atau koneksi API
+│   ├── data/         # Data statis atau JSON untuk konten
+├── .gitignore        # File untuk mengabaikan file yang tidak perlu di Git
+├── package.json      # Daftar dependensi dan skrip npm
+├── tailwind.config.js# Konfigurasi Tailwind CSS
+├── next.config.js    # Konfigurasi Next.js
+└── README.md         # Dokumentasi proyek
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Teknologi yang Digunakan
+- **Next.js** - Framework React untuk membangun website
+- **Tailwind CSS** - Styling modern dan fleksibel
+- **Lucide Icons** - Ikon ringan untuk UI
+- **Vercel** - Hosting dan deployment otomatis
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Cara Menjalankan Proyek
+1. Clone repositori:
+   ```bash
+   git clone https://github.com/ProjectAhkdan/websitekomporgas.git
+   ```
+2. Masuk ke folder proyek:
+   ```bash
+   cd websitekomporgas
+   ```
+3. Install dependensi:
+   ```bash
+   npm install
+   # atau
+   yarn install
+   ```
+4. Jalankan server pengembangan:
+   ```bash
+   npm run dev
+   # atau
+   yarn dev
+   ```
+   Website akan berjalan di **http://localhost:3000**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Deployment
+Proyek ini di-deploy menggunakan **Vercel**. Setiap perubahan yang didorong ke branch `main` akan otomatis dideploy.
 
-## Learn More
+## 📬 Kontak
+Jika ada pertanyaan atau ingin bekerja sama, hubungi kami melalui:
+- **Website**: [spesialiskomporgas.id](https://spesialiskomporgas.id)
+- **Email**: support@spesialiskomporgas.id
 
-To learn more about Next.js, take a look at the following resources:
+---
+💡 _Made with ❤️ by Jamantek & ProjectAhkdan_
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
